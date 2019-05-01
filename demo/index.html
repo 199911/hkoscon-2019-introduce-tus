@@ -2,17 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>tus-js-client demo - File Upload</title>
+    <title>TUS file upload demo</title>
     <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" />
-    <link href="./demo.css" rel="stylesheet" media="screen" />
   </head>
   <body>
     <div class="container">
-      <h1>tus-js-client demo - File Upload</h1>
-
-      <p>
-        This demo shows the basic functionality of the tus protocol. You can select a file using the controls below and start/pause the upload as you wish.
-      </p>
+      <h1>TUS file upload demo</h1>
 
       <div class="alert alert-warining hidden" id="support-alert">
         <b>Warning!</b> Your browser does not seem to support the features necessary to run tus-js-client. The buttons below may work but probably will fail silently.
@@ -28,7 +23,7 @@
             </label>
           </td>
           <td>
-            <input type="text" id="endpoint" name="endpoint" value="http://localhost:1080/files/">
+            <input type="text" id="endpoint" name="endpoint" value="http://localhost:3000/uploads/">
           </td>
         </tr>
         <tr>
@@ -82,6 +77,6 @@
     </div>
   </body>
 
-  <script src="./node_modules/tus-js-client/dist/tus.js"></script>
-  <script src="./demo.js"></script>
+  <script src="./tus.js"></script>
+  <script src="./index.js"></script>
 </html>
