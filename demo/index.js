@@ -6,7 +6,6 @@
 var upload          = null;
 var uploadIsRunning = false;
 var toggleBtn       = document.querySelector("#toggle-btn");
-var resumeCheckbox  = document.querySelector("#resume");
 var input           = document.querySelector("input[type=file]");
 var progress        = document.querySelector(".progress");
 var progressBar     = progress.querySelector(".bar");
@@ -66,7 +65,6 @@ function startUpload() {
 
   var options = {
     endpoint: endpoint,
-    resume  : !resumeCheckbox.checked,
     chunkSize: chunkSize,
     retryDelays: [0, 1000, 3000, 5000],
     metadata: {
