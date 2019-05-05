@@ -6,6 +6,7 @@
   "author": "Ku Lok Sun <sundaykuloksun@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "tus": "node tus-demo/server",
     "stream": "node stream-demo/server"
   },
   "dependencies": {

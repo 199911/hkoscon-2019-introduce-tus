@@ -3,7 +3,7 @@ const app = express()
 
 const tusRouter = require('./tusRouter.js');
 
-app.use('/', express.static('demo'));
+app.use('/', express.static(__dirname + '/static'));
 app.use('/uploads', tusRouter);
 
 const port = 3000
