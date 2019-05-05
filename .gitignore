@@ -63,3 +63,6 @@ typings/
 # file directory
 
 files/*
+
+# output file
+*.out

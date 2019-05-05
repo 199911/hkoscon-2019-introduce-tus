@@ -5,6 +5,9 @@
   "repository": "https://github.com/199911/tus-prototype.git",
   "author": "Ku Lok Sun <sundaykuloksun@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "stream": "node stream-demo/server"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "tus-js-client": "^1.8.0-0",
