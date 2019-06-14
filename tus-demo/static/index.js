@@ -86,7 +86,7 @@ function startUpload() {
     onSuccess: function () {
       var anchor = document.createElement("a");
       anchor.textContent = "Download " + upload.file.name + " (" + upload.file.size + " bytes)";
-      anchor.href = upload.url;
+      anchor.href = '/files/' + upload.url.split('/').pop();
       anchor.className = "btn btn-success";
       uploadList.appendChild(anchor);
 
