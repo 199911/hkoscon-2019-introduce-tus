@@ -14,32 +14,6 @@
 
 `tail -f tus.out`
 
-## Happy flow
-
-### Get upload location
-
-```
-POST /uploads HTTP/1.1
-Host: localhost:3000
-Content-Length: 0
-Tus-Resumable: 1.0.0
-Upload-Length: 12
-
-```
-
-### Upload
-
-```
-PATCH <Upload Location> HTTP/1.1
-Host: localhost:3000
-Content-Type: application/offset+octet-stream
-Content-Length: 12
-Tus-Resumable: 1.0.0
-Upload-Offset: 0
-
-Hello World!
-```
-
 ## Resumable upload
 
 ### Get upload location
